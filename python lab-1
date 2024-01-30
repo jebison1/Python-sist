@@ -1,0 +1,26 @@
+def trace_data_types(data_item):
+  print("original data item:",data_item)
+  result=None
+  if isinstance(data_item,int):
+    result=data_item+10
+    print("type:int")
+  elif isinstance(data_item,float):
+    result=data_item*2
+    print("type:float")
+  elif isinstance(data_item,str):
+    result=len(data_item)
+    print("type:list")
+  elif isinstance(data_item,dict):
+    result=list(data_item.keys())
+    print("type:dict")
+  else:
+    print("type:unknown")
+  print("result after applying built-in functions",result)
+  print()
+
+trace_data_types(5)
+trace_data_types(3.14)
+trace_data_types("hello")
+trace_data_types([1,2,3,4])
+trace_data_types({"a":1,"b":2,"c":3})
+trace_data_types(True)
