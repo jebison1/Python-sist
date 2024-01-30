@@ -1,0 +1,12 @@
+def factorial_calculation():
+  num = int(input("Enter a positive integer:"))
+  if num <= 0:
+    print("Please enter a positive integer.")d
+    return
+  factorial_result=1
+  i=1
+  while i<=num:
+   factorial_result*=i
+   i+=1
+  print(f"the factorial of {num} is {factorial_result}")
+factorial_calculation()
